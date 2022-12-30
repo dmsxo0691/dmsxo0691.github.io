@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #555;
+}
+img {
+  border: 0;
+}
+body {
+  font: 12px/1.6 "Poiret One";
+  color: #555;
+}
+
+/* 각 영역별 기본 레이아웃 */
+header {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+nav {
+  position: relative;
+  width: 85%;
+  height: 35px;
+  background-color: #212121;
+  margin-left: 15%;
+}
+
+section {
+  position: relative;
+  width: 85%;
+  margin-left: 15%;
+}
+
+article {
+  height: 260px;
+  float: left;
+}
+
+/* 각 박스(article) 크기 지정 */
+article:nth-child(1) {
+  width: 60%;
+  background-color: #ddd;
+  height: 520px;
+} /*높이 2배*/
+
+article:nth-child(2) {
+  width: 40%;
+  background-color: #ccc;
+}
+article:nth-child(3) {
+  width: 20%;
+  background-color: #bbb;
+}
+article:nth-child(4) {
+  width: 20%;
+  background-color: #aaa;
+}
+article:nth-child(5) {
+  width: 20%;
+  background-color: #999;
+}
+article:nth-child(6) {
+  width: 40%;
+  background-color: #888;
+}
+article:nth-child(7) {
+  width: 20%;
+  background-color: #777;
+}
+article:nth-child(8) {
+  width: 20%;
+  background-color: #666;
+}
+article:nth-child(9) {
+  width: 40%;
+  background-color: #555;
+}
+article:nth-child(10) {
+  width: 20%;
+  background-color: #444;
+}
+article:nth-child(11) {
+  width: 20%;
+  background-color: #333;
+}
+article:nth-child(12) {
+  width: 20%;
+  background-color: #222;
+}
+
+/*레이아웃 변경될 때 보여주는 효과*/
+header,
+nav,
+section {
+  transition: all 0.6s;
+}
+
+article {
+  animation: scale1 1s;
+}
+@keyframes scale1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* header 영역 스타일 */
+/* 로고 스타일 */
+header h1 {
+  background: url(../images/logo1.png) no-repeat 0 0;
+  width: 180px;
+  height: 136px;
+  background-size: contain;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -90px;
+  text-indent: -9999px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+
+#gnb {
+  position: absolute;
+  top: 300px;
+  right: 57px;
+}
+
+#gnb a {
+  display: block;
+  padding: 3px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.8;
+  transition: all 0.6s;
+}
+
+#gnb a:hover {
+  color: skyblue;
+}
+
+#gnb a i {
+  margin-right: 13px;
+}
+
+.snsSet {
+  width: 90px;
+  height: 47px;
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  margin-right: -45px;
+}
+.snsSet a {
+  float: left;
+}
+
+nav a {
+  position: absolute;
+  top: 5px;
+}
+
+nav a:nth-child(1) {
+  left: 10px;
+}
+nav a:nth-child(2) {
+  left: 150px;
+}
+nav a:nth-child(3) {
+  right: 90px;
+}
+nav a:nth-child(4) {
+  right: 10px;
+}
+
+/* article(컨텐츠박스) 영역 스타일 */
+article > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  /* a태그 없어도 호버시 손모양 */
+}
+
+article .bg1 {
+  background-image: url(../images/pic1.jpg);
+}
+article .bg2 {
+  background-image: url(../images/pic2.jpg);
+}
+article .bg3 {
+  background-image: url(../images/pic3.jpg);
+}
+article .bg4 {
+  background-image: url(../images/pic4.jpg);
+}
+article .bg5 {
+  background-image: url(../images/pic5.jpg);
+}
+article .bg6 {
+  background-image: url(../images/pic6.jpg);
+}
+article .bg7 {
+  background-image: url(../images/pic7.jpg);
+}
+
+article .bg {
+  background-size: cover;
+  background-position: center;
+}
+
+article .bg span {
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+article .bg1 span {
+  font-size: 170px;
+  bottom: -76px;
+  right: -6px;
+  opacity: 1;
+}
+
+article .bg span {
+  transition: all 0.6s;
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+article:hover .bg span {
+  transform: scale(1);
+  opacity: 1;
+}
+
+article .bg1 span {
+  transition: all 0.8s;
+  opacity: 1;
+  transform: scale(1) rotateY(0);
+}
+
+article:hover .bg1 span {
+  transform: scale(1) rotateY(360deg);
+  color: #222;
+}
+
+article .txt {
+  color: #666;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+article:nth-child(3) .txt {
+  background-color: #bff7fa;
+}
+article:nth-child(11) .txt {
+  background-color: #e3f1fb;
+}
+
+article .txt i {
+  font-size: 300px;
+  color: #b3effc;
+  position: absolute;
+  bottom: -70px;
+  right: -200px;
+  opacity: 0;
+}
+
+article:nth-child(3) .txt i {
+  font-size: 200px;
+  color: #fff;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+}
+
+article .txt strong {
+  font-size: 30px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  display: block;
+}
+
+article .txt,
+article .txt i {
+  transition: all 1s;
+}
+
+article .txt strong {
+  transition: all 0.7s;
+}
+article:hover .txt {
+  background-color: #6ce2fb;
+  color: #fff;
+}
+article:hover .txt i {
+  right: 0;
+  opacity: 0.5;
+}
+article:hover .txt strong {
+  color: #fff;
+}

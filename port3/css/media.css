@@ -1,0 +1,538 @@
+/* 1280~1599 일 때 레이아웃 : 구형 노트북, 모니터 */
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+
+  nav,
+  section {
+    width: 100%;
+    margin-left: 0; /*margin-left 15% -> 0*/
+  }
+
+  header h1 {
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    margin-left: 0;
+  }
+
+  #gnb {
+    top: 20px;
+    right: 200px;
+  }
+
+  #gnb li {
+    float: left;
+  }
+
+  .snsSet {
+    bottom: 20px;
+    right: 80px;
+  }
+}
+
+/*1280 - 1599 일때 레이아웃 구형 노트북 또는 구형모니터*/
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  /* header를 상단으로 이동 */
+
+  nav,
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*pc margin-left:15% -> 0으로  */
+
+  header h1 {
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    margin-left: 0;
+  }
+  /* 로고이미지를 logo1 에서 logo2로 변경 위치도 왼쪽으로 이동 */
+
+  #gnb {
+    top: 20px;
+    right: 30px;
+  }
+  #gnb li {
+    float: left;
+  }
+  .snsSet {
+    display: none;
+  }
+
+  /*메뉴(gnb)를 오른쪽 끝으로 이동 .snsSet 비가시화*/
+
+  article:nth-child(1) {
+    width: 75%;
+  }
+  article:nth-child(2) {
+    width: 25%;
+  }
+  article:nth-child(3) {
+    width: 25%;
+  }
+  article:nth-child(4) {
+    width: 25%;
+  }
+  article:nth-child(5) {
+    width: 25%;
+  }
+  article:nth-child(6) {
+    width: 50%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+  }
+  article:nth-child(8) {
+    width: 25%;
+  }
+  article:nth-child(9) {
+    width: 25%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+  }
+  article:nth-child(11) {
+    width: 25%;
+  }
+  article:nth-child(12) {
+    width: 25%;
+  }
+  /* article 재배치 */
+}
+
+@media screen and (min-width: 780px) and (max-width: 1023px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  /* header를 상단으로 이동 */
+
+  nav,
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*pc margin-left:15% -> 0으로  */
+
+  header h1 {
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    margin-left: 0;
+  }
+  /* 로고이미지를 logo1 에서 logo2로 변경 위치도 왼쪽으로 이동 */
+
+  #gnb {
+    top: 20px;
+    right: 10px;
+  }
+  #gnb li {
+    float: left;
+  }
+  #gnb a {
+    padding: 10px;
+  }
+  .snsSet {
+    display: none;
+  }
+
+  /*메뉴(gnb)를 오른쪽 끝으로 이동 .snsSet 비가시화*/
+
+  article:nth-child(1) {
+    width: 100%;
+    height: 400px;
+  }
+  article:nth-child(2) {
+    width: 66.6666%;
+  }
+  article:nth-child(3) {
+    width: 33.3333%;
+  }
+  article:nth-child(4) {
+    width: 25%;
+    display: none;
+  }
+  article:nth-child(5) {
+    width: 33.3333%;
+  }
+  article:nth-child(6) {
+    width: 66.6666%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(8) {
+    width: 33.3333%;
+  }
+  article:nth-child(9) {
+    width: 33.3333%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(11) {
+    width: 33.3333%;
+  }
+  article:nth-child(12) {
+    width: 25%;
+    display: none;
+  }
+  /* article 재배치 */
+}
+
+@media screen and (min-width: 690px) and (max-width: 779px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  /* header를 상단으로 이동 */
+
+  nav,
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*pc margin-left:15% -> 0으로  */
+
+  header h1 {
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    margin-left: 0;
+  }
+  /* 로고이미지를 logo1 에서 logo2로 변경 위치도 왼쪽으로 이동 */
+
+  #gnb {
+    top: 20px;
+    right: 10px;
+  }
+  #gnb li {
+    float: left;
+  }
+  #gnb a {
+    padding: 10px;
+  }
+  .snsSet {
+    display: none;
+  }
+
+  /*메뉴(gnb)를 오른쪽 끝으로 이동 .snsSet 비가시화*/
+
+  article:nth-child(1) {
+    width: 100%;
+    height: 400px;
+  }
+  article:nth-child(2) {
+    width: 100%;
+  }
+  article:nth-child(3) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(4) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(5) {
+    width: 50%;
+  }
+  article:nth-child(6) {
+    width: 50%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(8) {
+    width: 50%;
+  }
+  article:nth-child(9) {
+    width: 50%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(11) {
+    width: 50%;
+  }
+  article:nth-child(12) {
+    width: 50%;
+  }
+  /* article 재배치 */
+}
+
+@media screen and (min-width: 480px) and (max-width: 689px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 130px;
+  }
+  /* header를 상단으로 이동 */
+
+  nav {
+    display: none;
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*pc margin-left:15% -> 0으로  */
+
+  header h1 {
+    position: relative;
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 0px;
+    margin: 0 auto;
+  }
+  /* 로고이미지를 logo1 에서 logo2로 변경 위치도 왼쪽으로 이동 */
+
+  #gnb {
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    height: 40px;
+  }
+  #gnb li {
+    float: left;
+    width: 25%;
+  }
+  #gnb a {
+    padding: 10px;
+  }
+  .snsSet {
+    display: none;
+  }
+
+  /*메뉴(gnb)를 오른쪽 끝으로 이동 .snsSet 비가시화*/
+
+  article:nth-child(1) {
+    width: 100%;
+    height: 400px;
+  }
+  article:nth-child(2) {
+    width: 100%;
+  }
+  article:nth-child(3) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(4) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(5) {
+    width: 50%;
+  }
+  article:nth-child(6) {
+    width: 50%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(8) {
+    width: 50%;
+  }
+  article:nth-child(9) {
+    width: 50%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(11) {
+    width: 50%;
+  }
+  article:nth-child(12) {
+    width: 50%;
+  }
+  /* article 재배치 */
+}
+
+@media screen and (min-width: 480px) and (max-width: 689px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 130px;
+  }
+  /* header를 상단으로 이동 */
+
+  nav {
+    display: none;
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*pc margin-left:15% -> 0으로  */
+
+  header h1 {
+    position: relative;
+    background-image: url(../images/logo2.png);
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 0px;
+    margin: 0 auto;
+  }
+  /* 로고이미지를 logo1 에서 logo2로 변경 위치도 왼쪽으로 이동 */
+
+  #gnb {
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    height: 40px;
+  }
+  #gnb li {
+    float: left;
+    width: 25%;
+  }
+  #gnb a {
+    padding: 10px;
+  }
+  .snsSet {
+    display: none;
+  }
+
+  /*메뉴(gnb)를 오른쪽 끝으로 이동 .snsSet 비가시화*/
+
+  article {
+    height: 150px;
+  }
+  article .bg1 span {
+    font-size: 140px;
+    bottom: -40px;
+    right: 0;
+  }
+  article:nth-child(1) {
+    width: 100%;
+    height: 300px;
+  }
+  article:nth-child(2) {
+    width: 100%;
+  }
+  article:nth-child(3) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(4) {
+    width: 33.3333%;
+    display: none;
+  }
+  article:nth-child(5) {
+    width: 50%;
+  }
+  article:nth-child(6) {
+    width: 50%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(8) {
+    width: 50%;
+  }
+  article:nth-child(9) {
+    width: 50%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+    display: none;
+  }
+  article:nth-child(11) {
+    width: 50%;
+  }
+  article:nth-child(12) {
+    width: 50%;
+  }
+  /* article 재배치 */
+}
+
+@media screen and (max-width: 470px) {
+  header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    z-index: 10;
+  }
+  nav {
+    display: none;
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+    z-index: 5;
+  }
+  article {
+    display: none;
+  }
+  article:nth-child(1) {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  header h1 {
+    width: 140px;
+    top: 20px;
+    margin-left: -70px;
+  }
+
+  #gnb {
+    top: 140px;
+    right: 50%;
+    width: 250px;
+    margin-right: -125px;
+  }
+
+  #gnb a {
+    width: 100%;
+    box-sizing: border-box;
+    background: #000;
+    opacity: 0.5;
+    color: #fff;
+    margin: 8px 0;
+    border-radius: 10px;
+  }
+
+  .snsSet {
+    display: none;
+  }
+  #gnb a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  article:nth-child(1) span {
+    display: none;
+  }
+}
