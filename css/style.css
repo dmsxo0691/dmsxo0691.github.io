@@ -39,8 +39,8 @@ body {
   font-size: 11px;
 }
 #circle {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-color: rgb(168, 194, 139);
   border-radius: 50%;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 #portfolio {
-  background: url(../images/2323334.jpg);
+  background: url(../images/2323334.jpg) cover;
   background-size: cover;
   padding-top: 30px;
   width: 100%;
